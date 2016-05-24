@@ -41,7 +41,7 @@ namespace CallRequestResponseService
                             new StringTable() 
                             {
                                 ColumnNames = new string[] {"Recency", "Frequency", "Monetary", "Time", "Class"},
-                                Values = new string[,] {  { "0", "0", "0", "0", "0" },  { "0", "0", "0", "0", "0" },  }
+                                Values = new string[,] {  { "2", "50", "12500", "98", "1" },  { "0", "13", "3250", "28", "0" },  }
                             }
                         },
                     },
@@ -49,7 +49,7 @@ namespace CallRequestResponseService
                     {
                     }
                 };
-                const string apiKey = "abc123"; // Replace this with the API key for the web service
+                const string apiKey = "mhpfpsGzXfdx1qo1G77sOhTqlq9RL2Eov0oCnTl2Syi8VUcDAo1SaDrP0ik//V+Mmmi2mSX05dS8pEzwmNoGEQ=="; // Replace this with the API key for the web service
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
                 client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/7d7848cb001d46359a76b5561abb9c89/services/28fe33a154e7410fa5e0829cb1bc143c/execute?api-version=2.0&details=true");
